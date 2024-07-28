@@ -88,9 +88,7 @@ const main = async () => {
 
     printSenderBalance();
 
-    const transactionCount = readlineSync.questionInt(
-      `Enter the number of transactions you want to send for address ${senderAddress}: `
-    );
+    const transactionCount = 100000
 
     for (let i = 1; i <= transactionCount; i++) {
       const receiverWallet = ethers.Wallet.createRandom();
